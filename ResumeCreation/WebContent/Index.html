@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+
+table{
+	border: dotted;
+	border-color: black;
+	align-self: stretch;
+}
+
+
+</style>
+
+</head>
+<body>
+<form action="ResumeAcceptAndDisplay" method ="GET">
+<h1 align="center">Provide Resume Information</h1>
+
+<table  align= "center" cellspacing="10">
+	<tr>
+		<td>
+			First Name :
+		</td>
+		
+		<td>
+			<input type="text" name="fname">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Last Name :
+		</td>
+			
+		<td>
+			<input type="text" name="lname">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Gender : 
+		</td>
+		
+		<td>
+			<input type="radio" name="gender" value="Male" Checked> Male 
+			<input type="radio" name="gender" value="Female"> Female 
+			<input type="radio" name="gender" value="Others"> Others
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Highest Qualification : 
+							
+		</td>
+		
+		<td>
+			<select name="qualification">
+								<option value="M.Tech">M.Tech</option>
+								<option value="B.Tech">B.Tech</option>
+								<option value="H.S">H.S</option>
+								<option value="Tenth">Tenth</option> 
+			</select>
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Date Of Birth : 
+		</td>
+		
+		<td>
+			<input type="date" name ="dob">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+				Hobbies : 
+		</td>
+		
+		<td>
+			<select multiple name="hobbies">
+								<option value="Dancing">Dancing</option>
+								<option value="Coding">Coding</option>
+								<option value="ReadingBooks">Reading Books</option>
+								<option value="PlayingCricket">Playing Cricket</option>
+								<option value="Eating">Eating</option>
+								<option value="Sleeping">Sleeping</option>
+			</select>
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Address : 
+		</td>
+		
+		<td>
+			<textarea name ="address" rows="4" cols="30"></textarea>
+		</td>	
+	</tr>
+		
+	<tr>
+		<td>
+			Photo : 
+		</td>
+		
+		<td>
+			<input type="file" name ="photo" accept="image/*">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+				Skills : 
+		</td>
+		
+		<td>
+			 <input type="checkbox" name="skills" value="C">C
+			  <input type="checkbox" name="skills" value="C++">C++
+			  <input type="checkbox" name="skills" value="Java">Java
+			  <input type="checkbox" name="skills" value="DotNet">Dot Net
+			  <input type="checkbox" name="skills" value="Python">Python
+			  <input type="checkbox" name="skills" value="R">R
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Email :
+		</td>
+		
+		<td>
+			 <input type="email" name="email" required="required">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Website : 
+		</td>
+		
+		<td>
+			<input type="url" name = "website"><br><br>
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Contact Number : 
+		</td>
+		
+		<td>
+			<input type="text" name="contactNumber" required="required">
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			Summary ; 
+		</td>
+		
+		<td>
+			<textarea name="summary" rows="5" cols="10"></textarea>
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			<input type="reset" name="reset" value="Clear"> 
+		</td>
+		
+		<td>
+			<input type="submit" name="submit" value="Submit">
+		</td>	
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>
