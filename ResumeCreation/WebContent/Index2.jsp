@@ -23,7 +23,7 @@ table{
 #content img {
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 50px;
 }
 
 </style>
@@ -42,21 +42,21 @@ table{
 
 	<tr >
 		<td>
-			First Name :
+			Name :
 		</td>
 		<td>
-			<%=resume.getFname()%>
+			<%=resume.getFname()+" "+resume.getLname()%>
 		</td>
 	<tr>
 	
-	<tr>
+<!--	<tr>
 		<td>
 			Last Name :
 		</td>
 		<td>
 			<%=resume.getLname()%>
 		</td>
-	</tr>
+	</tr> -->
 	
 	<tr>
 		<td>
@@ -90,8 +90,7 @@ table{
 			<% for(String hobbies : resume.getHobbies()){
 				%>
 				
-				<%=hobbies%>&nbsp&nbsp
-				
+				<%=hobbies+" "%>
 				<% 
 			}%>
 		</td>
